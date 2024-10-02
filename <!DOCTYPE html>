@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>História do JavaScript</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="text-center bg-dark text-white py-4">
+        <h1>História do JavaScript</h1>
+    </header>
+
+    <div class="container text-center mt-5">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="html2.png" alt="HTML" class="img-fluid mb-2">
+                <button class="btn btn-primary" onclick="togglePopup('htmlPopup')">HTML</button>
+            </div>
+            <div class="col-md-4">
+                <img src="css.jpg" alt="CSS" class="img-fluid mb-2">
+                <button class="btn btn-primary" onclick="togglePopup('cssPopup')">CSS</button>
+            </div>
+            <div class="col-md-4">
+                <img src="php.png" alt="PHP" class="img-fluid mb-2">
+                <button class="btn btn-primary" onclick="togglePopup('phpPopup')">PHP</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="htmlPopup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="togglePopup('htmlPopup')">&times;</span>
+            <h2>JavaScript e HTML</h2>
+            <p>JavaScript é utilizado para adicionar interatividade às páginas HTML. Combinando ambos, é possível criar experiências dinâmicas e envolventes na web.</p>
+        </div>
+    </div>
+
+    <div id="cssPopup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="togglePopup('cssPopup')">&times;</span>
+            <h2>JavaScript e CSS</h2>
+            <p>JavaScript pode manipular estilos CSS dinamicamente, permitindo que os desenvolvedores alterem a aparência das páginas em resposta a eventos do usuário.</p>
+        </div>
+    </div>
+
+    <div id="phpPopup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="togglePopup('phpPopup')">&times;</span>
+            <h2>JavaScript e PHP</h2>
+            <p>Enquanto PHP é uma linguagem de programação do lado do servidor, JavaScript é executado no cliente. Juntas, permitem a criação de aplicações web robustas.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
